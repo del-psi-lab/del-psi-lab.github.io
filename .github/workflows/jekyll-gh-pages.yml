@@ -32,9 +32,9 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
+          ruby-version: '3.2'
           source: ./
           destination: ./_site
-          ruby-version: '3.2'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
